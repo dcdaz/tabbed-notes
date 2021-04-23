@@ -1,0 +1,18 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Tabbed Notes for Plasma 5
+Comment=Allows to have some plain text notes in tabs
+Icon=mynotes
+Type=Service
+
+X-Plasma-NotificationArea=false
+X-Plasma-API=declarativeappletscript
+X-Plasma-MainScript=ui/main.qml
+X-KDE-ServiceTypes=Plasma/Applet
+X-KDE-PluginInfo-Author=Daniel Córdova A.
+X-KDE-PluginInfo-Email=danesc87@gmail.com
+X-KDE-PluginInfo-Name=com.nano-bytes.tabbed-notes
+X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-Website=https://nano-bytes.com
+X-KDE-PluginInfo-License=GPL3
+X-KDE-PluginInfo-Category=Utilities
