@@ -12,6 +12,11 @@ Add Configuration to Tabbed Notes
 Check wayland on Plasma with Nvidia
 ```
 
+UI ie:
+
+![tabbed-notes](tabbed-notes.png?raw=true)
+![tabbed-notes1](tabbed-notes1.png?raw=true)
+
 You can install, update, remove this *plasmoid* with the following commands:
 
 Install
