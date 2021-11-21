@@ -5,8 +5,13 @@ import QtQuick.Layouts 1.15
 
 Item {
     id: root
-    width: 300
+    width: 325
     height: 450
+
+    property string noteTextAreaColor: plasmoid.configuration.noteTextAreaColor
+    property string noteTextColor: plasmoid.configuration.noteTextColor
+    property string buttonsColor: plasmoid.configuration.buttonsColor
+    // property int noteTextFormat: plasmoid.configuration.noteTextFormat
 
     PlasmaCore.DataSource {
         id: dataSource
@@ -48,6 +53,13 @@ Item {
         ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
         ScrollBar.vertical.policy: ScrollBar.AlwaysOff
         TextArea {
+          background: Rectangle {
+            color: noteTextAreaColor
+          }
+          // Text Color
+          color: noteTextColor
+          // TODO found a way of getting enum value properly
+          textFormat: TextEdit.PlainText
           width: parent.width
           height: parent.height
           focus: true
@@ -67,12 +79,14 @@ Item {
         Button {
           id: addTabButton
           icon.name: "add"
+          icon.color: buttonsColor
           flat: true
           onClicked: newTabNameDialog.open()
         }
         Button {
           id: removeTabButton
           icon.name: "remove"
+          icon.color: buttonsColor
           flat: true
           onClicked: removeTab()
         }
@@ -86,6 +100,7 @@ Item {
         Button {
           id: saveButton
           icon.name: "dialog-ok"
+          icon.color: buttonsColor
           flat: true
           x: parent.width
           onClicked: saveData()
